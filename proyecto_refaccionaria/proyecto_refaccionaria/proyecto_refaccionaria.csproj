@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AA2CC214-7E80-460A-8073-D1AD39700566}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>proyecto_refaccionaria</RootNamespace>
+    <AssemblyName>proyecto_refaccionaria</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publicar\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>.\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BD\basedatos.cs" />
+    <Compile Include="clases\detalles_venta.cs" />
+    <Compile Include="clases\producto.cs" />
+    <Compile Include="clases\ventas.cs" />
+    <Compile Include="control\controlproducto.cs" />
+    <Compile Include="control\control_Ventas.cs" />
+    <Compile Include="Interfaz\Frm_consultaV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Frm_consultaV.Designer.cs">
+      <DependentUpon>Frm_consultaV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\FrmBaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\FrmBaja.Designer.cs">
+      <DependentUpon>FrmBaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\FrmConsultarP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\FrmConsultarP.Designer.cs">
+      <DependentUpon>FrmConsultarP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Frm_alta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Frm_alta.Designer.cs">
+      <DependentUpon>Frm_alta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Frm_modificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Frm_modificar.Designer.cs">
+      <DependentUpon>Frm_modificar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Frm_venta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Frm_venta.Designer.cs">
+      <DependentUpon>Frm_venta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Frm_Ventapagar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Frm_Ventapagar.Designer.cs">
+      <DependentUpon>Frm_Ventapagar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Frm_ventapro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Frm_ventapro.Designer.cs">
+      <DependentUpon>Frm_ventapro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\main.Designer.cs">
+      <DependentUpon>main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Interfaz\Frm_consultaV.resx">
+      <DependentUpon>Frm_consultaV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\FrmBaja.resx">
+      <DependentUpon>FrmBaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\FrmConsultarP.resx">
+      <DependentUpon>FrmConsultarP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Frm_alta.resx">
+      <DependentUpon>Frm_alta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Frm_modificar.resx">
+      <DependentUpon>Frm_modificar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Frm_venta.resx">
+      <DependentUpon>Frm_venta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Frm_Ventapagar.resx">
+      <DependentUpon>Frm_Ventapagar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Frm_ventapro.resx">
+      <DependentUpon>Frm_ventapro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\main.resx">
+      <DependentUpon>main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7da67201-a30e-4d22-b120-d00dac3092f1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0593d958-1b01-4ab9-9426-31d01a84e1c5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SIN_IMG.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
