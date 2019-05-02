@@ -1,0 +1,8 @@
+C:\Users\RAUL\Documents\Visual Studio 2013\Projects\proyecto_refaccionaria\pruebasRefaccionaria\bin\Debug\pruebasRefaccionaria.dll
+C:\Users\RAUL\Documents\Visual Studio 2013\Projects\proyecto_refaccionaria\pruebasRefaccionaria\bin\Debug\pruebasRefaccionaria.pdb
+C:\Users\RAUL\Documents\Visual Studio 2013\Projects\proyecto_refaccionaria\pruebasRefaccionaria\bin\Debug\proyecto_refaccionaria.exe
+C:\Users\RAUL\Documents\Visual Studio 2013\Projects\proyecto_refaccionaria\pruebasRefaccionaria\bin\Debug\MySql.Data.dll
+C:\Users\RAUL\Documents\Visual Studio 2013\Projects\proyecto_refaccionaria\pruebasRefaccionaria\bin\Debug\proyecto_refaccionaria.pdb
+C:\Users\RAUL\Documents\Visual Studio 2013\Projects\proyecto_refaccionaria\pruebasRefaccionaria\obj\Debug\pruebasRefaccionaria.csprojResolveAssemblyReference.cache
+C:\Users\RAUL\Documents\Visual Studio 2013\Projects\proyecto_refaccionaria\pruebasRefaccionaria\obj\Debug\pruebasRefaccionaria.dll
+C:\Users\RAUL\Documents\Visual Studio 2013\Projects\proyecto_refaccionaria\pruebasRefaccionaria\obj\Debug\pruebasRefaccionaria.pdb

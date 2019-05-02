@@ -68,7 +68,7 @@ namespace proyecto_refaccionaria.Interfaz
         {
             producto mproducto = new producto();
             mproducto.Nombre = txtnombre.Text;
-            mproducto.descripcion = TXTDescripcion.Text;
+            mproducto.descripcion = txtdescripcion.Text;
             mproducto.marca = txtmarca.Text;
             mproducto.precio = float.Parse(txtprecio.Text);
             mproducto.tipo = cbtipo.Text;
@@ -79,12 +79,28 @@ namespace proyecto_refaccionaria.Interfaz
             controlproducto mControl = new controlproducto();
             mControl.modificarproducto(mproducto);
             MessageBox.Show("Producto modificado");
+            txtdescripcion.Clear();
+            txtmarca.Clear();
+            txtnombre.Clear();
+            txtprecio.Clear() ;
+            
+            Tproductos.DataSource = mControl.consultartodosproductos().Tables[0];
         }
 
         private void Frm_modificar_Activated(object sender, EventArgs e)
         {
             controlproducto mControl = new controlproducto();
             Tproductos.DataSource = mControl.consultartodosproductos().Tables[0];
+        }
+
+        private void Tproductos_MouseClick(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

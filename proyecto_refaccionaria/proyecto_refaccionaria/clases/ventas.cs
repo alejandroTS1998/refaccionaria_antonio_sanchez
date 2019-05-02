@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace proyecto_refaccionaria.clases
 {
-    class ventas
+    public class ventas
     {
         public int id_venta { get; set; }
         public DateTime fecha { get; set; }

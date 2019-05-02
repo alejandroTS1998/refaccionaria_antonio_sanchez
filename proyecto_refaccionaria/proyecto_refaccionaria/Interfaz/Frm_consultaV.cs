@@ -34,9 +34,11 @@ namespace proyecto_refaccionaria.Interfaz
                 {     
                  ventas mventas = new ventas();
                   control_Ventas mcontrol = new control_Ventas();
+                  tventa.DataSource = null;
                     if(mventas.fecha.ToString()==fechad.Text)
                     {
-                        tventa.DataSource = mcontrol.consultarventa(mventas).Tables;
+
+                        tventa.DataSource = mcontrol.consultarventa(mventas).Tables[0];
                     }           
                 }
                 catch (Exception)

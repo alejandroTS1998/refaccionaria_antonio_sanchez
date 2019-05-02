@@ -98,12 +98,6 @@
     <Compile Include="Interfaz\Frm_modificar.Designer.cs">
       <DependentUpon>Frm_modificar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Interfaz\Frm_venta.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Interfaz\Frm_venta.Designer.cs">
-      <DependentUpon>Frm_venta.cs</DependentUpon>
-    </Compile>
     <Compile Include="Interfaz\Frm_Ventapagar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,9 +132,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaz\Frm_modificar.resx">
       <DependentUpon>Frm_modificar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Interfaz\Frm_venta.resx">
-      <DependentUpon>Frm_venta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaz\Frm_Ventapagar.resx">
       <DependentUpon>Frm_Ventapagar.cs</DependentUpon>

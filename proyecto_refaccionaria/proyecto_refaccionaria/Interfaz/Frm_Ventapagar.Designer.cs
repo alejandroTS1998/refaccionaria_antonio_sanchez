@@ -33,11 +33,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.txtcambio = new System.Windows.Forms.TextBox();
-            this.Txttotal = new System.Windows.Forms.TextBox();
             this.txtefectivo = new System.Windows.Forms.TextBox();
             this.btnaceptar = new System.Windows.Forms.Button();
             this.btncerrar = new System.Windows.Forms.Button();
+            this.Cambiox = new System.Windows.Forms.Label();
+            this.txttot = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -92,20 +92,6 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // txtcambio
-            // 
-            this.txtcambio.Location = new System.Drawing.Point(175, 262);
-            this.txtcambio.Name = "txtcambio";
-            this.txtcambio.Size = new System.Drawing.Size(206, 20);
-            this.txtcambio.TabIndex = 5;
-            // 
-            // Txttotal
-            // 
-            this.Txttotal.Location = new System.Drawing.Point(175, 101);
-            this.Txttotal.Name = "Txttotal";
-            this.Txttotal.Size = new System.Drawing.Size(206, 20);
-            this.Txttotal.TabIndex = 6;
-            // 
             // txtefectivo
             // 
             this.txtefectivo.Location = new System.Drawing.Point(175, 184);
@@ -115,33 +101,54 @@
             // 
             // btnaceptar
             // 
-            this.btnaceptar.Location = new System.Drawing.Point(41, 329);
+            this.btnaceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.btnaceptar.Location = new System.Drawing.Point(42, 305);
             this.btnaceptar.Name = "btnaceptar";
-            this.btnaceptar.Size = new System.Drawing.Size(93, 23);
+            this.btnaceptar.Size = new System.Drawing.Size(132, 59);
             this.btnaceptar.TabIndex = 8;
             this.btnaceptar.Text = "aceptar";
             this.btnaceptar.UseVisualStyleBackColor = true;
+            this.btnaceptar.Click += new System.EventHandler(this.btnaceptar_Click);
             // 
             // btncerrar
             // 
-            this.btncerrar.Location = new System.Drawing.Point(250, 329);
+            this.btncerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncerrar.Location = new System.Drawing.Point(239, 305);
             this.btncerrar.Name = "btncerrar";
-            this.btncerrar.Size = new System.Drawing.Size(131, 23);
+            this.btncerrar.Size = new System.Drawing.Size(142, 59);
             this.btncerrar.TabIndex = 9;
             this.btncerrar.Text = "cerrar";
             this.btncerrar.UseVisualStyleBackColor = true;
             this.btncerrar.Click += new System.EventHandler(this.btncerrar_Click);
+            // 
+            // Cambiox
+            // 
+            this.Cambiox.AutoSize = true;
+            this.Cambiox.Font = new System.Drawing.Font("MS Reference Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cambiox.Location = new System.Drawing.Point(305, 260);
+            this.Cambiox.Name = "Cambiox";
+            this.Cambiox.Size = new System.Drawing.Size(0, 26);
+            this.Cambiox.TabIndex = 10;
+            // 
+            // txttot
+            // 
+            this.txttot.AutoSize = true;
+            this.txttot.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txttot.Location = new System.Drawing.Point(207, 105);
+            this.txttot.Name = "txttot";
+            this.txttot.Size = new System.Drawing.Size(0, 25);
+            this.txttot.TabIndex = 11;
             // 
             // Frm_Ventapagar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(453, 455);
+            this.Controls.Add(this.txttot);
+            this.Controls.Add(this.Cambiox);
             this.Controls.Add(this.btncerrar);
             this.Controls.Add(this.btnaceptar);
             this.Controls.Add(this.txtefectivo);
-            this.Controls.Add(this.Txttotal);
-            this.Controls.Add(this.txtcambio);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -149,6 +156,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "Frm_Ventapagar";
             this.Text = "venta";
+            this.Load += new System.EventHandler(this.Frm_Ventapagar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -163,10 +171,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtcambio;
-        private System.Windows.Forms.TextBox Txttotal;
         private System.Windows.Forms.TextBox txtefectivo;
         private System.Windows.Forms.Button btnaceptar;
         private System.Windows.Forms.Button btncerrar;
+        private System.Windows.Forms.Label Cambiox;
+        public System.Windows.Forms.Label txttot;
     }
 }

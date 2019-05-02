@@ -9,7 +9,7 @@ using proyecto_refaccionaria.clases;
 
 namespace proyecto_refaccionaria.BD
 {
-    class basedatos
+    public class basedatos
     {
       MySqlConnection Conexion;
 

@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "proyecto_refaccionaria", "proyecto_refaccionaria\proyecto_refaccionaria.csproj", "{AA2CC214-7E80-460A-8073-D1AD39700566}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pruebasRefaccionaria", "pruebasRefaccionaria\pruebasRefaccionaria.csproj", "{021C602A-7988-473B-915C-2CA61A99AC1F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{AA2CC214-7E80-460A-8073-D1AD39700566}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA2CC214-7E80-460A-8073-D1AD39700566}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA2CC214-7E80-460A-8073-D1AD39700566}.Release|Any CPU.Build.0 = Release|Any CPU
+		{021C602A-7988-473B-915C-2CA61A99AC1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{021C602A-7988-473B-915C-2CA61A99AC1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{021C602A-7988-473B-915C-2CA61A99AC1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{021C602A-7988-473B-915C-2CA61A99AC1F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

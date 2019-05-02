@@ -68,7 +68,7 @@ namespace proyecto_refaccionaria
 
         private void ayudaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            MessageBox.Show("para ayuda preguntarle a nacho");
         }
 
         private void consultarVentasToolStripMenuItem_Click(object sender, EventArgs e)

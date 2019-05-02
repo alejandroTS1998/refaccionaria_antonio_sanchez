@@ -48,5 +48,16 @@ namespace proyecto_refaccionaria.control
             mconexion.Desconectar();
             return listaventas2;
         }
+        public DataSet consultarprecio(producto mproducto)
+        {
+            String SQL = "select precio from producto where nombre = '?1' ";
+            SQL = SQL.Replace("?1", mproducto.Nombre);
+            DataSet listaproductos;
+            basedatos mconexion = new basedatos();
+            mconexion.Conectar();
+            listaproductos = mconexion.ejecutarConsulta(SQL);
+            mconexion.Desconectar();
+            return listaproductos;
+        }
     }
 }

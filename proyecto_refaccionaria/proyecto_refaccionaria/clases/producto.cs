@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace proyecto_refaccionaria.clases
 {
-    class producto
+    public class producto
     {
         public string Nombre { get; set; }
         public string descripcion { get; set; }

@@ -13,6 +13,5 @@ C:\Users\RAUL\Documents\Visual Studio 2013\Projects\proyecto_refaccionaria\proye
 C:\Users\RAUL\Documents\Visual Studio 2013\Projects\proyecto_refaccionaria\proyecto_refaccionaria\obj\Debug\proyecto_refaccionaria.Interfaz.FrmBaja.resources
 C:\Users\RAUL\Documents\Visual Studio 2013\Projects\proyecto_refaccionaria\proyecto_refaccionaria\obj\Debug\proyecto_refaccionaria.Interfaz.FrmConsultarP.resources
 C:\Users\RAUL\documents\visual studio 2013\Projects\proyecto_refaccionaria\proyecto_refaccionaria\obj\Debug\proyecto_refaccionaria.Interfaz.Frm_consultaV.resources
-C:\Users\RAUL\documents\visual studio 2013\Projects\proyecto_refaccionaria\proyecto_refaccionaria\obj\Debug\proyecto_refaccionaria.Interfaz.Frm_venta.resources
 C:\Users\RAUL\documents\visual studio 2013\Projects\proyecto_refaccionaria\proyecto_refaccionaria\obj\Debug\proyecto_refaccionaria.Interfaz.Frm_Ventapagar.resources
 C:\Users\RAUL\documents\visual studio 2013\Projects\proyecto_refaccionaria\proyecto_refaccionaria\obj\Debug\proyecto_refaccionaria.Interfaz.Frm_ventapro.resources

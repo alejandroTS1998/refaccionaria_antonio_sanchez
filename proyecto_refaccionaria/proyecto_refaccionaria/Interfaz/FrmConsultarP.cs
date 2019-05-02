@@ -43,11 +43,21 @@ namespace proyecto_refaccionaria.Interfaz
                 try
                 {
                     producto mproducto = new producto();
-                    mproducto.Nombre = txtname.Text;
-                    mproducto.marca = txtmarca.Text;
                     controlproducto mcontrol = new controlproducto();
-                    tproductos.DataSource = null;
-                    tproductos.DataSource = mcontrol.consultarproductos(mproducto).Tables[0];
+
+                    if (txtmarca == null) {
+                        mproducto.Nombre = txtname.Text;
+                       
+                        tproductos.DataSource = null;
+                        tproductos.DataSource = mcontrol.consultarproductos(mproducto).Tables[0];
+                    }
+                    else
+                    {
+                        mproducto.Nombre = txtname.Text;
+                        mproducto.marca = txtmarca.Text;
+                        tproductos.DataSource = null;
+                        tproductos.DataSource = mcontrol.consultarproductos(mproducto).Tables[0];
+                    }
                 }
                 catch (Exception)
                 {
